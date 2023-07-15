@@ -228,7 +228,7 @@ def add_to_cart(message, product):
             add_button = telebot.types.InlineKeyboardButton(text='Add More Items', callback_data='add_more')
             cart_button = telebot.types.InlineKeyboardButton(text='View Cart', callback_data='cart')
             admin_button = telebot.types.InlineKeyboardButton(text='Contact Admin', url='https://t.me/...')
-            owner_button = telebot.types.InlineKeyboardButton(text='Contact Bot Owner', url='https://t.me/...')
+            owner_button = telebot.types.InlineKeyboardButton(text='Contact Bot Owner', url='https://t.me/NiksereshtRoya')
             markup.row(add_button, cart_button)
             markup.row(admin_button, owner_button)
             bot.send_message(message.chat.id, f"{quantity} {product['name']} added to cart.", reply_markup=markup)
