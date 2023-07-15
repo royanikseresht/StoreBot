@@ -139,7 +139,6 @@ def insert_order_info(user_ID, item_total_price):
         print(f"Error inserting order info: {e}")
         conn.rollback()
 
-
 def insert_orderlines_info(order_ID, product_ID, quantity):
     conn = mysql.connector.connect(**config)
     cursor = conn.cursor()
