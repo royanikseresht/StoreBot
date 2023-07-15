@@ -12,7 +12,7 @@ commands = {
     'order'       : 'To order',
     'help'        : 'Gives you information about the available commands'
 }
-config = {'user': 'root', 'password': '...', 'host': '...', 'database': '...'}
+config = {'user': 'root', 'password': '...', 'host': '...', 'database': 'StoreBot'}
 
 logging.basicConfig(filename='storebot.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info('*** StoreBot INITIALIZED ***')
